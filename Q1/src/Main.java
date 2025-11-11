@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
        Scanner scanner = new Scanner(System.in);
+       Subject manager = new Subject();
        boolean running = true;
 
        while (running) {
@@ -15,16 +16,20 @@ public class Main {
            System.out.print("Auswahl: ");
 
            int choice = scanner.nextInt();
+           scanner.nextLine();
            switch (choice) {
                case 1:
-                   Grade.punkteBerechnung();
+                   Grade.punkteBerechnung(manager);
                    break;
 
                case 2:
-
+                   System.out.println("Welches Fach möchtest du sehen?");
+                   String subject = scanner.nextLine();
+                   manager.showGrades(subject);
                    break;
 
                case 3:
+                   manager.showAllSubjects();
                    break;
 
                case 4:
