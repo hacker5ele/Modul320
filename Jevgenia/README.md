@@ -42,5 +42,8 @@ Bei der Datenkapselung geht es dabei, Daten von "unkontrolliertem Zugriff" zu sc
 
 ## 17.11
 
+- DRY
+
+
 
 
