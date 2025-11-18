@@ -71,7 +71,11 @@ public class Main {
 
                     Account targetAccount;
 
-                    if (Objects.equals(a1.getAccountNumber(), accountNumber2)) {
+                    if(account.getAccountNumber().equals(accountNumber2)) {
+                        System.out.println("You cannot transfer money to your own account!");
+                        break;
+                    }
+                    else if (Objects.equals(a1.getAccountNumber(), accountNumber2)) {
                         targetAccount = a1;
                     } else if (Objects.equals(a2.getAccountNumber(), accountNumber2)) {
                         targetAccount = a2;
