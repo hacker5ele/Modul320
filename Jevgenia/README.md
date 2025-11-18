@@ -1,8 +1,7 @@
-# Modul320
+# Portfolio
+# 11.11
 
-## 11.11
-
-### Was habe ich gelernt?
+## Was habe ich gelernt?
 
 Themen:
 - Primitive Datentypen
@@ -10,7 +9,7 @@ Themen:
 - Datenkapselung
 - Access modifiers
 
-#### Primitive Datentypen
+### Primitive Datentypen
 
 Primitive Datentypen sind Datentypen, welche einen gegebenen Wert direkt in der Variable speichern.
 
@@ -21,7 +20,7 @@ Primitive Datentypen sind:
 - char
 - boolean
 
-#### Referenztypen
+### Referenztypen
 
 Referenztypen sind Datentypen (Variabeln, Objekte) welche den Wert der Daten nicht direkt speichern, sondern auf einen anderen Typ referenziert. Also eigentlich speichert es den Speichertort, bzw. Adresse eines Objektes. (Speicher im Heap)
 
