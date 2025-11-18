@@ -14,17 +14,20 @@ public class Main {
         Account a2 = new Account("235-65-45", "Alice", 456, "EUR");
 
         System.out.println("WELCOME!");
-        System.out.println("Please enter your account number: ");
+        String accountNumber;
 
-        String accountNumber = scanner.nextLine();
-
-        if (Objects.equals(a1.getAccountNumber(), accountNumber)) {
-            account = a1;
-        } else if (Objects.equals(a2.getAccountNumber(), accountNumber)) {
-            account = a2;
-        } else {
-            System.out.println("Account not found!");
-            return;
+        while(true) {
+            System.out.println("Please enter your account number: ");
+            accountNumber = scanner.nextLine();
+            if (Objects.equals(a1.getAccountNumber(), accountNumber)) {
+                account = a1;
+                break;
+            } else if (Objects.equals(a2.getAccountNumber(), accountNumber)) {
+                account = a2;
+                break;
+            } else {
+                System.out.println("Account not found!");
+            }
         }
 
         System.out.println("Welcome: " + account.getOwner());
@@ -49,12 +52,14 @@ public class Main {
                     double amount = scanner.nextDouble();
                     scanner.nextLine();
                     account.addBalance(amount);
+                    System.out.println("Your balance is: " + account.getBalance());
                     break;
                 case 2:
                     System.out.println("Enter amount to be withdrawn: ");
                     double amount2 = scanner.nextDouble();
                     scanner.nextLine();
                     account.withdraw(amount2);
+                    System.out.println("Your balance is: " + account.getBalance());
                     break;
                 case 3:
                     System.out.println("Enter amount to be transferred: ");
@@ -64,7 +69,8 @@ public class Main {
                     System.out.println("Enter account number to transfer money to: ");
                     String accountNumber2 = scanner.nextLine();
 
-                    Account targetAccount = null;
+                    Account targetAccount;
+
                     if (Objects.equals(a1.getAccountNumber(), accountNumber2)) {
                         targetAccount = a1;
                     } else if (Objects.equals(a2.getAccountNumber(), accountNumber2)) {
@@ -75,6 +81,7 @@ public class Main {
                     }
 
                     account.transfer(targetAccount, amount3);
+                    System.out.println("Your balance is: " + account.getBalance());
                     break;
 
                 case 4:
