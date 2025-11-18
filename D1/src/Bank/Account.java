@@ -16,7 +16,6 @@ public class Account {
 
     public void addBalance(double amount) {
         this.balance += amount;
-        System.out.println("New balance: " + this.balance);
     }
 
     public void withdraw(double amount) {
@@ -24,7 +23,6 @@ public class Account {
             System.out.println("Insufficient funds!");
         } else  {
             this.balance = balance - amount;
-            System.out.println("New balance: " + this.balance);
         }
     }
 
