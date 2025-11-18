@@ -4,8 +4,8 @@
 ## Was habe ich gelernt?
 
 Themen:
-- Primitive Datentypen
-- Referenztypen
+- [Primitive Datentypen](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#primitive-datentypen)
+- [Referenztypen](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#referenztypen)
 - Datenkapselung
 - Access modifiers
 
