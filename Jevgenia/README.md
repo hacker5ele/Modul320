@@ -12,7 +12,12 @@ Themen:
 
 #### Referenztypen
 
- Referenztypen sind Typen (Variabeln, Objekte) welche den Wert der Daten nicht direkt speichert, sondern uf einen adneren Typ referenziert. Also eigentlich speicert es den Speichertort eines Objektes. 
+Referenztypen sind Typen (Variabeln, Objekte) welche den Wert der Daten nicht direkt speichert, sondern uf einen adneren Typ referenziert. Also eigentlich speicert es den Speichertort eines Objektes. 
+
+Referenztypen sind zum Beispiel:
+- Klassen
+- Arrays
+- Interfaces
 
 
 ## 17.11
