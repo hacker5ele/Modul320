@@ -35,7 +35,7 @@ public class Account {
             System.out.println("Insufficient funds!");
             return;
         }
-1
+
         this.withdraw(amount);
         accountToTransfer.addBalance(amount);
         System.out.println("Transferred " + amount + " " + currency + " to " + accountToTransfer.getOwner());
