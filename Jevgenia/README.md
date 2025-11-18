@@ -6,8 +6,8 @@
 Themen:
 - [Primitive Datentypen](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#primitive-datentypen)
 - [Referenztypen](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#referenztypen)
-- Datenkapselung
-- Access modifiers
+- [Datenkapselung](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#datenkapselung)
+- [Access modifiers](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#access-modifiers)
 
 ### Primitive Datentypen
 
@@ -28,6 +28,13 @@ Referenztypen sind zum Beispiel:
 - Klassen
 - Arrays
 - Interfaces
+
+
+### Datenkapselung
+
+
+
+### Access Modifiers
 
 
 ## 17.11
