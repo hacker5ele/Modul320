@@ -5,14 +5,25 @@
 ### Was habe ich gelernt?
 
 Themen:
-- Primitive und komplexe Datentypem
+- Primitive Datentypen
 - Referenztypen
 - Datenkapselung
 - Access modifiers
 
+#### Primitive Datentypen
+
+Primitive Datentypen sind Datentypen, welche einen gegebenen Wert direkt in der Variable speichern.
+
+Primitive Datentypen sind:
+- int
+- double
+- float
+- char
+- boolean
+
 #### Referenztypen
 
-Referenztypen sind Typen (Variabeln, Objekte) welche den Wert der Daten nicht direkt speichert, sondern uf einen adneren Typ referenziert. Also eigentlich speicert es den Speichertort eines Objektes. 
+Referenztypen sind Datentypen (Variabeln, Objekte) welche den Wert der Daten nicht direkt speichern, sondern auf einen anderen Typ referenziert. Also eigentlich speichert es den Speichertort, bzw. Adresse eines Objektes. (Speicher im Heap)
 
 Referenztypen sind zum Beispiel:
 - Klassen
