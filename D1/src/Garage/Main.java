@@ -17,7 +17,36 @@ public class Main {
             System.out.print("Choose an option: ");
 
             int option = scanner.nextInt();
-        }
+            scanner.nextLine();
 
+            switch (option) {
+                case 1:{
+                    System.out.print("Vehicle Name: ");
+                    String name = scanner.nextLine();
+                    System.out.print("Repair Costs: ");
+                    double costs = scanner.nextDouble();
+                    scanner.nextLine();
+                    garage.addVehicle(name, costs);
+                }
+                break;
+                case 2:{
+                    System.out.print("Name of the repaired vehicle: ");
+                    String name = scanner.nextLine();
+                    garage.repairVehicle(name);
+                }
+                break;
+                case 3:{
+                    garage.showAllVehicles();
+                }
+                break;
+                case 4:{
+                    System.out.println("Closing garage...");
+                    running = false;
+                }
+                break;
+                default: System.out.println("Not a valid option!");
+            }
+        }
+      scanner.close();
     }
 }
