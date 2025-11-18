@@ -33,6 +33,9 @@ Referenztypen sind zum Beispiel:
 ### Datenkapselung
 
 
+Bei der Datenkapselung geht es dabei, Daten von "unkontrolliertem Zugriff" zu schützen
+
+
 
 ### Access Modifiers
 
