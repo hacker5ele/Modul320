@@ -88,6 +88,7 @@ public class Main {
                     break;
 
                 case 4:
+                    System.out.println("Enter type/breed: ");
                     String type = sc.nextLine();
                     pets.showPetsByType(type);
                     break;
