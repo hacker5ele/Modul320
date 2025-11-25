@@ -1,8 +1,6 @@
 # Portfolio
 # 11.11
 
-## Was habe ich gelernt?
-
 ### Primitive Datentypen
 
 Primitive Datentypen sind Datentypen, welche einen gegebenen Wert direkt in der Variable speichern.
