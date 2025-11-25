@@ -33,7 +33,11 @@ Referenztypen sind zum Beispiel:
 ### Datenkapselung
 
 
-Bei der Datenkapselung geht es dabei, Daten von "unkontrolliertem Zugriff" zu schützen
+Bei der Datenkapselung geht es dabei, Daten von "unkontrolliertem Zugriff" zu schützen.
+
+Wie:
+1. Variablen privat machen (private), sodass nur die Klasse selbst darauf zugreifen kann.
+2. Getter- und Setter-Methoden bereitstellen (public), sodass man kontrollierten Zugriff von außen hat.
 
 
 
