@@ -46,10 +46,10 @@ Wie:
 
 | Modifier                    | Zugriff von…             | Beschreibung                                                                  |
 | --------------------------- | ------------------------ | ----------------------------------------------------------------------------- |
-| `private`                   | Nur innerhalb der Klasse | Stellt sicher, dass niemand direkt von außen zugreifen kann                   |
-| `default`                   | Nur innerhalb des Pakets | Standardzugriff                                                               |
-| `protected`                 | Paket + Unterklassen     | Unterklassen oder Klassen im gleichen Paket dürfen zugreifen.                 |
-| `public`                    | Überall                  | Voller Zugriff                                                                |
+|  private                    | Nur innerhalb der Klasse | Stellt sicher, dass niemand direkt von außen zugreifen kann                   |
+|  default                    | Nur innerhalb des Pakets | Standardzugriff                                                               |
+|  protected                  | Paket + Unterklassen     | Unterklassen oder Klassen im gleichen Paket dürfen zugreifen.                 |
+|  public                     | Überall                  | Voller Zugriff                                                                |
 
 
 
