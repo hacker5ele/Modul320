@@ -3,7 +3,7 @@ package first;
 public class Animal {
     public String name;
     protected int age;
-    private String type;
+    public String type;
 
     public Animal(String name, int age, String type) {
         this.name = name;
