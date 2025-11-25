@@ -2,10 +2,10 @@ package second;
 
 import java.util.ArrayList;
 
-public class CatList extends ArrayList<Cats> {
+public class PetList extends ArrayList<Pets> {
 
     public void printAll() {
-        for (Cats cat : this) {
+        for (Pets cat : this) {
             System.out.println(cat);
         }
     }

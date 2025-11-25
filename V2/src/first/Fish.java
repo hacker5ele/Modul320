@@ -16,7 +16,7 @@ public class Fish extends Animal {
     @Override
     public void showInfo() {
         super.showInfo();
-        System.out.println("Water Type: " + waterType);
+        System.out.print(", Water Type: " + waterType);
     }
 
 }

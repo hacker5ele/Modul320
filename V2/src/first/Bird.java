@@ -23,11 +23,11 @@ public class Bird extends Animal {
     @Override
     public void showInfo() {
         super.showInfo();
-        System.out.println("Can Fly: " + canFly);
-        System.out.println("Can Talk: " + canTalk);
+        System.out.print(", Can Fly: " + canFly + ", Can Talk: " + canTalk);
     }
 
-    public void activity() {
+    @Override
+    public void performActivity() {
         String action = name + " is ";
         action += canFly ? "flying" : "sitting";
         action += canTalk ? " and talking" : "";

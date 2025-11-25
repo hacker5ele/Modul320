@@ -17,10 +17,11 @@ public class Cat extends Animal {
     @Override
     public void showInfo() {
         super.showInfo();
-        System.out.println("Indoor: " + indoor);
+        System.out.print(", Indoor: " + indoor);
     }
 
-    public void scratch() {
+    @Override
+    public void performActivity() {
         System.out.println(name + " is scratching the post.");
     }
 }

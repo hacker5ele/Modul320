@@ -1,6 +1,6 @@
 package first;
 
-class Dog extends Animal {
+public class Dog extends Animal {
 
     public Dog(String name, int age, String type) {
         super(name, age, type);
@@ -12,7 +12,8 @@ class Dog extends Animal {
         System.out.println("Woof!");
     }
 
-    public void fetch() {
+    @Override
+    public void performActivity() {
         System.out.println(name + " is fetching a ball.");
     }
 }

@@ -1,8 +1,8 @@
 package first;
 
 public class Animal {
-    protected String name;
-    private int age;
+    public String name;
+    protected int age;
     private String type;
 
     public Animal(String name, int age, String type) {
@@ -16,7 +16,11 @@ public class Animal {
     }
 
     public void showInfo() {
-        System.out.println("Name: " + name + ", Age: " + age + ", Type: " + type);
+        System.out.print("Name: " + name + ", Age: " + age + ", Type: " + type);
+    }
+
+    public void performActivity(){
+        System.out.println("No activity");
     }
 
 }
