@@ -3,12 +3,6 @@
 
 ## Was habe ich gelernt?
 
-Themen:
-- [Primitive Datentypen](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#primitive-datentypen)
-- [Referenztypen](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#referenztypen)
-- [Datenkapselung](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#datenkapselung)
-- [Access modifiers](https://github.com/hacker5ele/Modul320/blob/main/Jevgenia/README.md#access-modifiers)
-
 ### Primitive Datentypen
 
 Primitive Datentypen sind Datentypen, welche einen gegebenen Wert direkt in der Variable speichern.
@@ -73,6 +67,18 @@ Wieso:
 
 ### Vererbung
 
+- Vererbung bedeutet, dass eine Klasse Eigenschaften und Methoden einer anderen Klasse übernimmt
+
+Bsp:
+- Man hat mehrere Klassen mit denselben Attributen und Methoden:
+  - name, age, type
+  - showInfo()
+- Statt alle Klassen normal zu definieren und sich dadurch zu wiedeholen, kann man die geteilten Attribute und Methoden "auslagern" und in einer Superklasse definieren
+- Die Subklassen, also Klassen, diese Attribute benötigen, erben von der Superklasse. Falls sie weitere Attribute besitzen (legs, bark), kann man diese in den Subklassen zu den geerbten Attributen anfüpgen.
+- Wenn man die selben Methoden in der Subklasse besitzt, sie jedoch etwas anderes ausgeben sollen, zB alle Attribute ausgeben, auch die die nicht in der Superklasse sind, kann man diese überschreiben
+
+- Erben: extends
+- Von Superklasse übernehmen: super
 
 
 
