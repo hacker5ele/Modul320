@@ -44,7 +44,7 @@ Wie:
 ### Access Modifiers
 
 
-| Modifier                    | Zugriff von…             | Beschreibung                                                                  |
+| Modifier                    | Zugriff von:             | Beschreibung                                                                  |
 | --------------------------- | ------------------------ | ----------------------------------------------------------------------------- |
 |  private                    | Nur innerhalb der Klasse | Stellt sicher, dass niemand direkt von außen zugreifen kann                   |
 |  default                    | Nur innerhalb des Pakets | Standardzugriff                                                               |
@@ -58,6 +58,30 @@ Wie:
 - DRY
 - Vererbung
 - Interfaces
+
+### DRY
+
+- Don't repeat yourself
+- DRY ist ein Prinzip, auf welches man sich auchten muss, um wiederholenden Code zu vermeiden.
+- Statt mehrere Funktionen zu schreiben, die dasselbe tun, kann man es einfach in ein Funktion einbinden
+- Wenn man dieselben Print Statements hat, soll man diese stattdessen in einer Funktion einbauen und diese aufrufen
+
+Wieso:
+- bessere Leslichkeit
+- Vereinfachung
+- Code verkleinern
+
+### Vererbung
+
+
+
+
+
+
+
+
+
+
 
 
 
