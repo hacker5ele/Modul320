@@ -61,4 +61,8 @@ public class Pets {
             System.out.println("Pet named \"" + type + "\" not found.");
         }
     }
+
+    public void showPetByName(String name) {
+
+    }
 }

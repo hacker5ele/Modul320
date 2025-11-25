@@ -5,8 +5,8 @@ public class Bird extends Animal {
     private boolean canFly;
     private boolean canTalk;
 
-    public Bird(String name, int age, String type, boolean fly, boolean talk) {
-        super(name, age, type);
+    public Bird(String name, int age, String type, String breed, boolean fly, boolean talk) {
+        super(name, age, type, breed);
         this.canFly = fly;
         this.canTalk = talk;
     }

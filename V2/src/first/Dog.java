@@ -2,8 +2,8 @@ package first;
 
 public class Dog extends Animal {
 
-    public Dog(String name, int age, String type) {
-        super(name, age, type);
+    public Dog(String name, int age, String type, String breed) {
+        super(name, age, type, breed);
     }
 
 

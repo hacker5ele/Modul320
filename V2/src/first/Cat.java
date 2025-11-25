@@ -4,8 +4,8 @@ public class Cat extends Animal {
 
     private boolean indoor;
 
-    public Cat(String name, int age, String type, boolean indoor) {
-        super(name, age, type);
+    public Cat(String name, int age, String type, String breed, boolean indoor) {
+        super(name, age, type, breed);
         this.indoor = indoor;
     }
 
