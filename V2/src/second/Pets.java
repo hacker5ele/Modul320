@@ -16,22 +16,17 @@ public class Pets {
         pets.add(pet);
     }
 
-    public void removePet(String name){
-        Animal toRemove = null;
-        for(Animal a : pets){
-            if(a.name.equalsIgnoreCase(name)){
-                toRemove = a;
-                break;
-            }
-        }
-        if(toRemove != null){
-            pets.remove(toRemove);
-            System.out.println(name + " was removed.");
+    public void removePet(String name) {
+        boolean removed = false;
+
+        removed = pets.removeIf(a -> a.name.equalsIgnoreCase(name));
+
+        if (removed) {
+            System.out.println("All pets named \"" + name + "\" were removed.");
         } else {
-            System.out.println(name + " does not exist.");
+            System.out.println("No pet named \"" + name + "\" found.");
         }
     }
-
 
     public void showAllPets(){
         for (Animal a : pets){
