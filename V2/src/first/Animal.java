@@ -18,7 +18,7 @@ public class Animal {
     }
 
     public void showInfo() {
-        System.out.print("Name: " + name + ", Age: " + age + ", Type: " + type);
+        System.out.print("Name: " + name + ", Age: " + age + ", Type: " + type +  ", Breed: " + breed);
     }
 
     public void performActivity(){
