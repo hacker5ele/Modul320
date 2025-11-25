@@ -50,19 +50,21 @@ public class Pets {
 
     public void showPetsByType(String type) {
         boolean found = false;
+
         for (Animal a : pets) {
             if (a.type.equalsIgnoreCase(type)) {
                 a.showInfo();
                 found = true;
                 break;
             }
-        }
+                if (a.breed.equalsIgnoreCase(type)) {
+                    a.showInfo();
+                    found = true;
+                    break;
+                }
+            }
         if (!found) {
             System.out.println("Pet named \"" + type + "\" not found.");
         }
-    }
-
-    public void showPetByName(String name) {
-
     }
 }
