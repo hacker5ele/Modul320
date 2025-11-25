@@ -54,13 +54,13 @@ public class Pets {
         for (Animal a : pets) {
             if (a.type.equalsIgnoreCase(type)) {
                 a.showInfo();
+                System.out.println();
                 found = true;
-                break;
             }
                 if (a.breed.equalsIgnoreCase(type)) {
                     a.showInfo();
+                    System.out.println();
                     found = true;
-                    break;
                 }
             }
         if (!found) {
