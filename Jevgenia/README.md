@@ -100,7 +100,7 @@ Wofür:
 ### Overload
 
 
-### Polymorphie
+### Polymorphismus
 
 
 
