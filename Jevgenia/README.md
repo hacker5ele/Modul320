@@ -83,10 +83,13 @@ Bsp:
 - Interfaces sind wie Vorgaben, welche andere Klassen implementieren können
 - Sie definieren bestimmte Methoden, welche die implementierenden Klassen benutzten müssen
 - Die vordefinierten Methoden erthalten keine Logik, diese müssen die implementierenden Klassen selbst schreiben
+- => Beschreibt was ein Objekt machen soll, aber nicht wie
 
+Wofür:
+- Vereinheitlichung
+- ermöglicht Polymorphismus
 
-
-
+## 25.11
 
 
 
