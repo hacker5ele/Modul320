@@ -84,6 +84,7 @@ Bsp:
 - Sie definieren bestimmte Methoden, welche die implementierenden Klassen benutzten müssen
 - Die vordefinierten Methoden erthalten keine Logik, diese müssen die implementierenden Klassen selbst schreiben
 - => Beschreibt was ein Objekt machen soll, aber nicht wie
+- Wie? mit implements
 
 Wofür:
 - Vereinheitlichung
