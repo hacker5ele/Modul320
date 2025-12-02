@@ -94,15 +94,27 @@ Wofür:
 
 
 ### Override
+Bei der Vererbung, können Subklassen (die, die erben), MEthoden der Superklasse übernehmen, aber auch überschreiben. Mit dem Überschreiben können sie Logik verändern, die Methoden erweitern oder komplett ersetzen.
 
+Dafür nutzt man die Annotation @Override überhalb der Methode
 
 
 ### Overload
 
+Overloading bedeuted, mehrere gleichnamige Methoden innerhalb einer Klasse zu erstellen/definieren/nutzen.
+
+- Normalerweise würde sich die IDE beschweren, wenn man mehrere gleichnamige Methoden besitzt. Beim Overloading is aber der Unterschied, dass die Methode nicht 1:1 kopiert wird. Die gleichnamigen Methoden haben alle unterschidliche Typen, PArameter usw.
+- Bsp: add(int a), add(int a, int b) => zwei gleichnamige Methoden, aber mit unterschiedlich vielen Parametern
+
 
 ### Polymorphismus
 
+Poly = verschiedene, viele
+Morphs = Formen, Gestalten
 
+- Polymorphismus = Vielgestaltigkeit
+- => Objekte können in verschiedenen Formen auftreten
+- => Methoden mit demselben Namen, können mit anderen Parametern oder Implementierungen aufgerufen werden
 
 
 
