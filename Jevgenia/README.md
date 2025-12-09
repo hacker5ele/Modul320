@@ -118,3 +118,39 @@ Morphs = Formen, Gestalten
 
 
 
+## 2.12
+
+### Assoziationen
+
+- Assoziation = Beziehung zwischen Klassen
+- Beschreibt, welche Klasse mit welcher kommuniziert
+- Es gibt sogenannte HAT- und IST-Beziehungen
+- HAT-Beziehung => 2 Objekte kennen sich, existieren aber unabhängig voneinander
+- Bsp: Kunde hat einen Account
+- Beziehungen: unidirektional, bidirektional
+
+
+#### Aggregation
+- Aggregation = Sonderform der Assoziation zwischen 2 Klassen
+- HAT-Beziehung vorhanden
+- festere Beziehungen zwischen Objekten
+- 2 Objekte können aber ohne einander existeren
+- Bsp: Ein Buchregal hat Bücher
+  - Beides kann ohne einander existieren
+
+Dastellung:
+Buchregal ◇----- Buch
+
+
+#### Komposition
+
+- Komposition = Sonderform der Assoziation
+- "Besteht aus"-Beziehung
+- Objekte/Teilobjekte existieren nur solange das Ganze existiert
+- Bsp: Baum und Blätter -> Ohne den Baum existieren die Blätter nicht
+
+Darstellung:
+Baum ◆----- Blätter
+
+
+## 9.12
