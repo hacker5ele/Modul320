@@ -2,13 +2,20 @@ import java.util.Scanner;
 import second.*;
 import first.*;
 
+/**
+ * Main entry point for the Pet Store application.
+ * Handles user input, menu navigation, and interaction with the Pets manager.
+ */
 public class Main {
     public static void main(String[] args) {
 
+        // Stores and manages the list of pets
         Pets pets = new Pets();
+
         Scanner sc = new Scanner(System.in);
         boolean running = true;
 
+        // Main application loop
         while(running) {
 
         System.out.println("\n=== Pet Store ===");
@@ -24,6 +31,7 @@ public class Main {
             sc.nextLine();
             switch(option) {
                 case 1:
+                    // ------- ADD PET -------
                     System.out.println("What type of pet would you like to add?");
                     System.out.println("1. Dog");
                     System.out.println("2. Cat");
@@ -32,12 +40,14 @@ public class Main {
                     int petType = sc.nextInt();
                     sc.nextLine(); // consume newline
 
+                    // Common attributes for all pets
                     System.out.print("Enter name: ");
                     String name = sc.nextLine();
                     System.out.print("Enter age: ");
                     int age = sc.nextInt();
                     sc.nextLine(); // consume newline
 
+                    // Create specific pet types based on selection
                     switch (petType) {
                         case 1: // Dog
                             System.out.print("Enter dog breed: ");
@@ -80,30 +90,36 @@ public class Main {
                     }
                     break;
                 case 2:
+                    // Show all stored pets
                     pets.showAllPets();
                     break;
 
                 case 3:
+                    // Show behaviors for all pets
                     pets.showBehaviour();
                     break;
 
                 case 4:
+                    // Show pets filtered by type or breed
                     System.out.println("Enter type/breed: ");
                     String type = sc.nextLine();
                     pets.showPetsByType(type);
                     break;
 
                 case 5:
+                    // Remove a pet by name
                     System.out.print("Enter pet name to remove: ");
                     String removeName = sc.nextLine();
                     pets.removePet(removeName);
                     break;
 
                 case 6:
+                    // Exit program
                     running = false;
                     System.out.println("Exiting Pet Store...");
                     break;
                 default:
+                    // Handles invalid menu options
                     System.out.println("Invalid Option");
 
             }
