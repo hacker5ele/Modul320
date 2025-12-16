@@ -154,3 +154,37 @@ Baum ◆----- Blätter
 
 
 ## 9.12
+
+
+### JavaDoc
+
+- JavaDoc ist ein Software-Dokumentationswerkzeug. Es erstellt aus Java-Quellenexten automatische HTML-Dokumentationen.
+- Man kann professionelle Dokumentationen mit einer einfacher Struktur erstellen, welche andere Personen gut und verständlich lesen können. Somit ist es eine einfache Art und Weise, seinen Code zu dokumentieren, sodass es für alle verstädlich ist.
+
+#### JavaDoc Comments
+
+Syntax:
+````
+/**
+ * Comment
+ */
+````
+
+Struktur:
+- Normalerweise beinhaltet ein JavaDoc Comment:
+  - Description: Kurze Beschreibung
+  - Block tags: Bestimmte Tags, welche eine DOkumentation enthalten und welche man über den Hover sehen kann. Dieese kann man mit Java auch selber erstellen. (@param, @return, @author ...)
+
+Man kann eine JavaDoc auch selber generieren:
+- JavaDoc generieren:
+  - ```` javadoc file_name.java ```` oder für ein Package: ```` javadoc package_name ````
+
+Nützliche Tags:
+- @author
+- @exception
+- @version
+- @param
+- @return
+
+
+
