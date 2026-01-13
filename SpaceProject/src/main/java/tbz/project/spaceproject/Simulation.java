@@ -1,6 +1,15 @@
 package tbz.project.spaceproject;
 
+import tbz.project.spaceproject.rest.PlanetAPIService;
+
 public class Simulation {
+
+    private final PlanetAPIService planetAPIService;
+
+    public Simulation(PlanetAPIService planetAPIService) {
+        this.planetAPIService = planetAPIService;
+    }
+
 
     public void runSimulation(int type) {
 
