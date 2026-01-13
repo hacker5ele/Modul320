@@ -49,4 +49,18 @@ Heuet habe ich die Kompetenz V1, D1 und M1 erledigt
 ## 02.12.2025
 **Was habe ich heute gemacht?**
 Heute habe ich Kompetenz M2 erledigt.
-**Was habe ich gelernt/repetiert?** 
+**Was habe ich gelernt/repetiert?**
+
+## 02.12.2025
+**Was habe ich heute gemacht?**
+D2 angefangen,
+**Was habe ich gelernt/repetiert?**
+Assosazionen, 
+## 09.12.2025
+**Was habe ich heute gemacht?**
+Q2, D2 fertig, 
+**Was habe ich gelernt/repetiert?**
+## 16.12.2025
+**Was habe ich heute gemacht?**
+V3
+**Was habe ich gelernt/repetiert?**
