@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import tbz.project.spaceproject.Planet;
+import tbz.project.spaceproject.PlanetFactory;
 
 import java.util.Map;
 
@@ -38,13 +39,7 @@ public class PlanetAPIService {
 
         Map<String, Object> body = response.getBody();
 
-        return new Planet(
-                (String) body.get("id"),
-                (String) body.get("englishName"),
-                body.get("gravity") != null
-                        ? ((Number) body.get("gravity")).doubleValue()
-                        : 0.0
-        );
+        return PlanetFactory.createFromApi(body);
     }
 }
 
