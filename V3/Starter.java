@@ -5,10 +5,9 @@ public class Starter {
         Scanner sc = new Scanner(System.in);
         Portfolio p = new Portfolio();
 
-        boolean valid = true;
         Stockexchange exchange = null;
 
-        while (valid) {
+        while (true) {
             System.out.println("Welche Börse?");
             System.out.println("1. New York");
             System.out.println("2. London");
@@ -32,7 +31,6 @@ public class Starter {
 
                 case 4:
                     System.out.println("Programm beendet...");
-                    valid = false;
                     sc.close();
                     return;
 
