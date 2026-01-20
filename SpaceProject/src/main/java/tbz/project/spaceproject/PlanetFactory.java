@@ -1,53 +1,34 @@
 package tbz.project.spaceproject;
-
-import java.util.Map;
+import tbz.project.spaceproject.DTO.PlanetApiDTO;
 
 public class PlanetFactory {
-    public static Planet createFromApi(Map<String, Object> data) {
 
-        // Gravity
-        double gravity = 0.0;
-        if (data.get("gravity") != null) {
-            gravity = ((Number) data.get("gravity")).doubleValue();
-        }
+    private static final double KELVIN_TO_CELSIUS = 273.15;
 
-        // Temperature
-        double temperature = 0.0;
-        if (data.get("avgTemp") != null) {
-            temperature = ((Number) data.get("avgTemp")).doubleValue();
-        }
+    public static Planet createFromApi(PlanetApiDTO dto) {
 
-        // Mass
+        double gravity = dto.getGravity() != null ? dto.getGravity() : 0.0;
         double mass = 0.0;
-        Map<String, Object> massMap = (Map<String, Object>) data.get("mass");
-        if (massMap != null) {
-            Number massValue = (Number) massMap.get("massValue");
-            Number massExponent = (Number) massMap.get("massExponent");
-            if (massValue != null && massExponent != null) {
-                mass = massValue.doubleValue() * Math.pow(10, massExponent.doubleValue());
-            }
+        if (dto.getMass() != null) {
+            mass = dto.getMass().getMassValue()
+                   * Math.pow(10, dto.getMass().getMassExponent());
         }
 
-        // Volume
-        double vol = 0.0;
-        Map<String, Object> volMap = (Map<String, Object>) data.get("vol");
-        if (volMap != null) {
-            Number volValue = (Number) volMap.get("volValue");
-            Number volExponent = (Number) volMap.get("volExponent");
-            if (volValue != null && volExponent != null) {
-                vol = volValue.doubleValue() * Math.pow(10, volExponent.doubleValue());
-            }
+        double volume = 0.0;
+        if (dto.getVol() != null) {
+            volume = dto.getVol().getVolValue()
+                     * Math.pow(10, dto.getVol().getVolExponent());
         }
 
         return new Planet(
-                (String) data.get("id"),
-                (String) data.get("englishName"),
+                dto.getId(),
+                dto.getEnglishName(),
                 gravity,
-                (String) data.get("discoveredBy"),
-                (String) data.get("discoveryDate"),
-                temperature,
+                dto.getAvgTemp(),
                 mass,
-                vol
+                volume,
+                dto.getDiscoveryDate(),
+                dto.getDiscoveredBy()
         );
     }
 }

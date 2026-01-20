@@ -1,6 +1,10 @@
 package tbz.project.spaceproject;
 
-public abstract class SpaceObject {
+import lombok.Getter;
+
+@Getter
+public abstract class SpaceObject implements Explorable {
+
     protected String id;
     protected String name;
 
@@ -9,5 +13,8 @@ public abstract class SpaceObject {
         this.name = name;
     }
 
-    public abstract String getInfo(); // Polymorphismus
+    @Override
+    public String getInfo() {
+        return "SpaceObject: " + name + " (ID: " + id + ")";
+    }
 }

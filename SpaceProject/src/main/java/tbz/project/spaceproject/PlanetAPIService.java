@@ -1,4 +1,4 @@
-package tbz.project.spaceproject.rest;
+package tbz.project.spaceproject;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
@@ -7,10 +7,8 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-import tbz.project.spaceproject.Planet;
-import tbz.project.spaceproject.PlanetFactory;
+import tbz.project.spaceproject.DTO.PlanetApiDTO;
 
-import java.util.Map;
 
 @Service
 public class PlanetAPIService {
@@ -30,16 +28,20 @@ public class PlanetAPIService {
 
         HttpEntity<Void> entity = new HttpEntity<>(headers);
 
-        ResponseEntity<Map> response = restTemplate.exchange(
+        ResponseEntity<PlanetApiDTO> response = restTemplate.exchange(
                 baseUrl + "/bodies/" + planetId,
                 HttpMethod.GET,
                 entity,
-                Map.class
+                PlanetApiDTO.class
         );
 
-        Map<String, Object> body = response.getBody();
+        PlanetApiDTO dto = response.getBody();
 
-        return PlanetFactory.createFromApi(body);
+        if (dto == null) {
+            throw new IllegalStateException("API returned no planet data");
+        }
+
+        return PlanetFactory.createFromApi(dto);
     }
 }
 
