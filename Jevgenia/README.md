@@ -187,4 +187,17 @@ Nützliche Tags:
 - @return
 
 
+## 06.01
+
+
+
+## 13.01
+
+Design Patterns
+
+
+
+
+## 20.01
+
 
