@@ -35,6 +35,7 @@ public class Simulation extends TripSimulation {
                 continue;
             }
 
+            // Show visited Planets collection
             if (selectedChoice == 8) {
                 tracker.showAll();
                 continue;

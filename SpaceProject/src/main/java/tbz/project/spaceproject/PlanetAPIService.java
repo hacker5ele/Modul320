@@ -13,9 +13,11 @@ import tbz.project.spaceproject.DTO.PlanetApiDTO;
 @Service
 public class PlanetAPIService {
 
+    // API URL
     @Value("${solar.api.base-url}")
     private String baseUrl;
 
+    // API TOKEN
     @Value("${solar.api.key}")
     private String apiKey;
 
@@ -28,6 +30,7 @@ public class PlanetAPIService {
 
         HttpEntity<Void> entity = new HttpEntity<>(headers);
 
+        // GET Method
         ResponseEntity<PlanetApiDTO> response = restTemplate.exchange(
                 baseUrl + "/bodies/" + planetId,
                 HttpMethod.GET,

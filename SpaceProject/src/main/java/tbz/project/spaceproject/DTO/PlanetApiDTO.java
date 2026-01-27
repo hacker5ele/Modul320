@@ -5,6 +5,7 @@ import lombok.Getter;
 @Getter
 public class PlanetApiDTO {
 
+    // Planet Info Attributes
     private String id;
     private String englishName;
     private Double gravity;

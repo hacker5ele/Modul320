@@ -2,6 +2,15 @@ package tbz.project.spaceproject;
 
 import java.util.Scanner;
 
+
+/**
+ * Represents a template for a space trip simulation.
+ * <p>
+ * This abstract class defines the overall flow of a space journey
+ * using the Template Method pattern. Subclasses must implement
+ * destination selection and planet exploration behavior.
+ * </p>
+ */
 public abstract class TripSimulation {
 
     private final Scanner scanner = new Scanner(System.in);
@@ -24,6 +33,7 @@ public abstract class TripSimulation {
         System.out.println("Welcome to SpaceXplorer\n");
     }
 
+    // 5 Second count down
     protected void countdown() {
         for (int i = 5; i >= 1; i--) {
             System.out.println(i + "..");
@@ -58,6 +68,11 @@ public abstract class TripSimulation {
         System.out.println("We're back on Earth dear fellow explorer, we hope you enjoyed your trip.\n");
     }
 
+    /**
+     * Pauses the program execution for the specified duration.
+     *
+     * @param millis time to sleep in milliseconds
+     */
     protected void sleep(long millis) {
         try {
             Thread.sleep(millis);

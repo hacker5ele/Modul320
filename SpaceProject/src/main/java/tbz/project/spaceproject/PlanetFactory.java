@@ -7,6 +7,7 @@ public class PlanetFactory {
 
     public static Planet createFromApi(PlanetApiDTO dto) {
 
+        // Various numbers about the Planets
         double gravity = dto.getGravity() != null ? dto.getGravity() : 0.0;
         double mass = 0.0;
         if (dto.getMass() != null) {
