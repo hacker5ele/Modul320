@@ -243,7 +243,28 @@ Ansätze:
 
 ## 13.01
 
-Design Patterns
+### Design Patterns
+
+Design Patterns = wiederverwendbare Lösungsansätze für typische Designprobleme im Code
+
+=> Design Patterns vereinfachen das Programmieren stark, da man vieles vereinheitlichen und wiederverwendbar machen kann. So zum Beispiel erstellt nicht jeder seine eigene Version einer z.B. Klasse, sondern jeder erstellt sie etwa gleich.
+
+Drei Hauptkategorien:
+- Creational Patterns (Objekterzeugung)
+  - Singleton: genau ein Instanz wird erzeugt
+  - Factory Method: Erzeugung der Instanzen wird ausgelagert
+  - Abstract Factory: zusammengehörige Objekte erzeugen. Oft bei GUI verwendet
+  - Builder: komplexe Objekte schrittweise erzeugen
+- Structural Patterns (Struktur)
+  - Adapter: macht Klassen kompatibel, z.B. alte Klasse an neues Interface anpassen
+  - Decorator: erweitert Verhalten ohne Vererbung
+  - Facade: einfache Oberfläche für komplexe Logik
+  - Composite: Baumstruktur -> Ordnerstruktur
+- Behavioral Patterns (Verhalten)
+  - Observer: Benachrichtigung bei Änderungen, bei z.B Events, Listener, GUI
+  - Strategy: austauschbare Algorithmen
+  - Command: Aktion als Objekt
+  - State: Verhalten abhängig vom Zustand
 
 
 
