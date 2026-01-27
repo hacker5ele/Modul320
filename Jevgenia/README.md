@@ -267,8 +267,38 @@ Drei Hauptkategorien:
   - State: Verhalten abhängig vom Zustand
 
 
-
-
 ## 20.01
 
-Clean Code
+### Clean Code
+
+Clean Code = Code so einfach und verstädnlich wie nur möglich zu halten
+
+Wieso? -> Damit der Code von jedem verstanden werden kann. 
+
+#### Naming conventions
+
+-> Name soll zeigen, wofür die erstellte Variable, Funktion oder Klasse zuständig ist
+
+#### Hard Coding
+
+-> So wenig wie möglich Hard Codieren. Statt Konstanten immer wieder neu definieren, sollte man sie stattdessen als Enums lagern. So vermindert man Duplikate oder Fehler bei Anpassungen
+
+
+#### Kommentarer
+
+=> JavaDoc
+
+
+#### Klassen
+
+-> Klassen sollen so "klein" wie nur möglich seiin. Das bedeuted, dass Klassen je nur eine Verantwortung wahrnehmen sollen. => SRP (Single Responsobility Principle)
+
+
+#### Methoden
+
+-> Ebenso wie Klassen, sollen Methoden so klein wie möglich gehalten werden. Braucht man 2 Verhalten, so kann man diese in 2 Methoden auslagern
+
+
+
+
+
