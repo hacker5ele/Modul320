@@ -2,6 +2,7 @@
 
 ## 11.11.2025
 **Was habe ich gemacht?**
+<br>
 Heute habe ich Java repetiert. Dies war für die Kompetenz Q1 nötig. Ich habe den ganzen Dokument durchgelesen. Danach habe ich mit Jevgenia entschieden was für ein Programm wir machen möchten. Wir entschieden uns für einen Notenrechner. Dort haben wir 3 verschiedene Klassen, eine Main (zum Starten), eine Subject und eine Grade Klasse. Wir haben die Arbeit aufgeteilt. Danach mussten wir es zeigen und zum Schluss einen Test machen. Diesen habe ich bestanden.
 
 **Was habe ich gelernt/ repetiert?**
@@ -63,6 +64,7 @@ Steuern den Ablauf eines Programms, z. B. durch Bedingungen (if/else) oder Schle
 
 ## 18.11.2025
 **Was habe ich gemacht?**
+<br>
 Heuet habe ich die Kompetenz V1, D1 und M1 erledigt
 
 **Was habe ich gelernt/ repetiert?**
@@ -138,6 +140,7 @@ Grafische Darstellung von Klassen, ihren Attributen, Methoden und Beziehungen.
 
 ## 25.11.2025
 **Was habe ich gemacht?** 
+<br>
 Ich habe die Kompetenz V2 erledigt.
 
 **Was habe ich gelernt/repetiert?**
@@ -200,12 +203,14 @@ Zuerst wird der **Konstruktor der Superklasse**, danach der der **Subklasse** au
 
 ## 02.12.2025
 **Was habe ich heute gemacht?**
+<br>
 Heute habe ich Kompetenz M2 erledigt.
 
 **Was habe ich gelernt/repetiert?**
 
 ## 02.12.2025
 **Was habe ich heute gemacht?**
+<br>
 D2 angefangen
 
 **Was habe ich gelernt/repetiert?**
@@ -228,6 +233,7 @@ Eine Klasse Student ist mit der Klasse Kurs assoziiert – ein Student besucht e
 
 ## 09.12.2025
 **Was habe ich heute gemacht?**
+<br>
 Q2, D2 fertig 
 
 **Was habe ich gelernt/repetiert?**
@@ -262,6 +268,7 @@ JavaDoc ist ein Dokumentationsstandard in Java, mit dem Klassen, Methoden und At
 
 ## 16.12.2025
 **Was habe ich heute gemacht?**
+<br>
 V3
 
 **Was habe ich gelernt/repetiert?**
@@ -308,6 +315,7 @@ The Collections class has ready-to-use algorithms for manipulating collections.
 
 ## 06.01.2026
 **Was habe ich heute gemacht?**
+<br>
 Für Projekt Brainstormed, M3 & Q3 angefangen
 
 **Was habe ich gelernt/repetiert?**
@@ -325,6 +333,7 @@ Generics ermöglichen es, Klassen, Schnittstellen oder Methoden so zu schreiben,
 
 ## 13.01.2026
 **Was habe ich heute gemacht?**
+<br>
 Am Projekt gearbeitet
 
 **Was habe ich gelernt/repetiert?**
@@ -349,6 +358,7 @@ Hilft, Code wiederzuverwenden und Verantwortlichkeiten klar zu trennen.
 
 ## 20.01.2026
 **Was habe ich heute gemacht?**
+<br>
 Projekt feingeschlifen, Prüfung gemacht
 
 **Was habe ich gelernt/repetiert?**
@@ -356,6 +366,7 @@ Alles (wegen der Prüfung)
 
 ## 27.01.2026
 **Was habe ich heute gemacht?**
+<br>
 Portfolio fertig geschrieben, Projekt gezeigt und kleine Anpassungen am Projekt gemacht
 
 **Was habe ich gelernt/repetiert?**
