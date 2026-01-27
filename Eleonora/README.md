@@ -65,7 +65,7 @@ Steuern den Ablauf eines Programms, z. B. durch Bedingungen (if/else) oder Schle
 ## 18.11.2025
 **Was habe ich gemacht?**
 <br>
-Heuet habe ich die Kompetenz V1, D1 und M1 erledigt
+Heute habe ich die Kompetenz V1, D1 und M1 erledigt
 
 **Was habe ich gelernt/ repetiert?**
 
