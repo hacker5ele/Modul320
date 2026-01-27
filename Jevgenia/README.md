@@ -237,9 +237,6 @@ Lösung:
   - Es kommt nicht mehr zum Absturz, da Java einen davor schon stoppt
 
 
-Ansätze:
-
-
 
 ## 13.01
 
