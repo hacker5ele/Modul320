@@ -188,11 +188,56 @@ Nützliche Tags:
 
 ## 16.12
 
-Collections & Algorthms
+### Collections & Algorthms
+
+#### Map Classes
+
+-> Eine Map lagert sogenannte Key-Value Paare. Dabei gehört jedes Key zu seinem Value.
+
+Welche Maps gibt es:
+- HashMap
+- TreeMap
+- LinkedHashMao
+
+Wichtig: Jeder Key muss eindeutig sein und darf nicht mehrfach vorhanden sein, da der Value sonst überschrieben wird.
+
+#### Algorithms
+
+Es gibt verschiedene Algorithmen, um diese Map Classes zu benutzen.
+
+Man kann:
+- Den Value mit dem Key finden
+- Word Count erstellen
+- Nach key oder value sortieren
+
+#### Stack Classes
+
+Es existieren auch sogenannte Stack Classes mit einem Last in, Firtst Out Prinzip. Das bedeuted, dass das letzte was hinzugefügt wurde, als erstes wieder entfernt wird. Funktionen dafür sind:
+- push() -> hinzufügen
+- pop() -> entfernen
+- peek() -> letzes hinzugefügt Element anschauen
+
+-> Man kann auch hier Algorithmen gebrauchen, wenn man zum Beispiel einen String umdrehen möchte.
+
 
 ## 06.01
 
-Generics
+### Generics
+
+Problem ohne Generics:
+- Java weiss nicht, welche Typen erlaubt sind. Kann man ein Int oder einen Strign in die Funktion mtgeben?
+- z.B.: liste.add("Max) und liste.add(8) -> wird erlaubt, obwohl es logisch falsch ist
+- Was aber später Probleme gibt ist, wenn man die Werte der Liste erhalten will und man dabei Java sagt: Es wird ein String sein. Wenn man dann aber einen int erhalten würde, kommt es zu einem Programmabsturz -> ClassCastException
+
+Lösung:
+- Generics
+- Man bestimmt einen Typen, wenn man die Funktion initialisiert
+- z.B. Liste<String> liste = ArrayList<>();
+- Hier: Man kann keine Int mehr in die Liste einfügen mit der add-Funktion, da der Compiler einen stoppen wird
+  - Es kommt nicht mehr zum Absturz, da Java einen davor schon stoppt
+
+
+Ansätze:
 
 
 
