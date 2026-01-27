@@ -186,5 +186,116 @@ Nützliche Tags:
 - @param
 - @return
 
+## 16.12
+
+### Collections & Algorthms
+
+#### Map Classes
+
+-> Eine Map lagert sogenannte Key-Value Paare. Dabei gehört jedes Key zu seinem Value.
+
+Welche Maps gibt es:
+- HashMap
+- TreeMap
+- LinkedHashMao
+
+Wichtig: Jeder Key muss eindeutig sein und darf nicht mehrfach vorhanden sein, da der Value sonst überschrieben wird.
+
+#### Algorithms
+
+Es gibt verschiedene Algorithmen, um diese Map Classes zu benutzen.
+
+Man kann:
+- Den Value mit dem Key finden
+- Word Count erstellen
+- Nach key oder value sortieren
+
+#### Stack Classes
+
+Es existieren auch sogenannte Stack Classes mit einem Last in, Firtst Out Prinzip. Das bedeuted, dass das letzte was hinzugefügt wurde, als erstes wieder entfernt wird. Funktionen dafür sind:
+- push() -> hinzufügen
+- pop() -> entfernen
+- peek() -> letzes hinzugefügt Element anschauen
+
+-> Man kann auch hier Algorithmen gebrauchen, wenn man zum Beispiel einen String umdrehen möchte.
+
+
+## 06.01
+
+### Generics
+
+Problem ohne Generics:
+- Java weiss nicht, welche Typen erlaubt sind. Kann man ein Int oder einen Strign in die Funktion mtgeben?
+- z.B.: liste.add("Max) und liste.add(8) -> wird erlaubt, obwohl es logisch falsch ist
+- Was aber später Probleme gibt ist, wenn man die Werte der Liste erhalten will und man dabei Java sagt: Es wird ein String sein. Wenn man dann aber einen int erhalten würde, kommt es zu einem Programmabsturz -> ClassCastException
+
+Lösung:
+- Generics
+- Man bestimmt einen Typen, wenn man die Funktion initialisiert
+- z.B. Liste<String> liste = ArrayList<>();
+- Hier: Man kann keine Int mehr in die Liste einfügen mit der add-Funktion, da der Compiler einen stoppen wird
+  - Es kommt nicht mehr zum Absturz, da Java einen davor schon stoppt
+
+
+
+## 13.01
+
+### Design Patterns
+
+Design Patterns = wiederverwendbare Lösungsansätze für typische Designprobleme im Code
+
+=> Design Patterns vereinfachen das Programmieren stark, da man vieles vereinheitlichen und wiederverwendbar machen kann. So zum Beispiel erstellt nicht jeder seine eigene Version einer z.B. Klasse, sondern jeder erstellt sie etwa gleich.
+
+Drei Hauptkategorien:
+- Creational Patterns (Objekterzeugung)
+  - Singleton: genau ein Instanz wird erzeugt
+  - Factory Method: Erzeugung der Instanzen wird ausgelagert
+  - Abstract Factory: zusammengehörige Objekte erzeugen. Oft bei GUI verwendet
+  - Builder: komplexe Objekte schrittweise erzeugen
+- Structural Patterns (Struktur)
+  - Adapter: macht Klassen kompatibel, z.B. alte Klasse an neues Interface anpassen
+  - Decorator: erweitert Verhalten ohne Vererbung
+  - Facade: einfache Oberfläche für komplexe Logik
+  - Composite: Baumstruktur -> Ordnerstruktur
+- Behavioral Patterns (Verhalten)
+  - Observer: Benachrichtigung bei Änderungen, bei z.B Events, Listener, GUI
+  - Strategy: austauschbare Algorithmen
+  - Command: Aktion als Objekt
+  - State: Verhalten abhängig vom Zustand
+
+
+## 20.01
+
+### Clean Code
+
+Clean Code = Code so einfach und verstädnlich wie nur möglich zu halten
+
+Wieso? -> Damit der Code von jedem verstanden werden kann. 
+
+#### Naming conventions
+
+-> Name soll zeigen, wofür die erstellte Variable, Funktion oder Klasse zuständig ist
+
+#### Hard Coding
+
+-> So wenig wie möglich Hard Codieren. Statt Konstanten immer wieder neu definieren, sollte man sie stattdessen als Enums lagern. So vermindert man Duplikate oder Fehler bei Anpassungen
+
+
+#### Kommentarer
+
+=> JavaDoc
+
+
+#### Klassen
+
+-> Klassen sollen so "klein" wie nur möglich seiin. Das bedeuted, dass Klassen je nur eine Verantwortung wahrnehmen sollen. => SRP (Single Responsobility Principle)
+
+
+#### Methoden
+
+-> Ebenso wie Klassen, sollen Methoden so klein wie möglich gehalten werden. Braucht man 2 Verhalten, so kann man diese in 2 Methoden auslagern
+
+
+
 
 
