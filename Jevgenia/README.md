@@ -188,6 +188,8 @@ Nützliche Tags:
 
 ## 16.12
 
+Collections & Algorthms
+
 ## 06.01
 
 Generics
@@ -203,4 +205,4 @@ Design Patterns
 
 ## 20.01
 
-
+Clean Code
