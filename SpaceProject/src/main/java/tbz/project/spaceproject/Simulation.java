@@ -1,6 +1,8 @@
 package tbz.project.spaceproject;
 
 import org.springframework.stereotype.Component;
+import tbz.project.spaceproject.Exception.PlanetApiException;
+
 import java.util.Scanner;
 
 @Component
@@ -61,8 +63,9 @@ public class Simulation extends TripSimulation {
                 currentPlanet = planetAPIService.getPlanet(destination.getPlanetId());
                 tracker.add(currentPlanet);
                 validChoice = true;
-            } catch (Exception e) {
-                System.out.println("Could not fetch planet data: " + e.getMessage() + "\n");
+            } catch (PlanetApiException e) {
+                throw new PlanetApiException("Planet API is unavailable", e);
+
             }
         }
     }
