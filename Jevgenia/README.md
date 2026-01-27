@@ -190,6 +190,8 @@ Nützliche Tags:
 
 ## 06.01
 
+Generics
+
 
 
 ## 13.01
